@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <RootNamespace>MashSlash</RootNamespace>
-        <AssemblyName>MashSlash</AssemblyName>
+        <RootNamespace>DamageModifier</RootNamespace>
+        <AssemblyName>DamageModifier</AssemblyName>
         <TargetFramework>net472</TargetFramework>
-        <AssemblyTitle>MashSlash</AssemblyTitle>
-        <Product>MashSlash</Product>
+        <AssemblyTitle>DamageModifier</AssemblyTitle>
+        <Product>DamageModifier</Product>
         <Description>A Hollow Knight mod that lets you mash nail swing to your heart's content</Description>
         <Copyright>Copyright © Makeit_Hardcore 2022</Copyright>
         <Authors>Makeit_Hardcore</Authors>
@@ -14,7 +14,7 @@
         <OutputPath>bin\$(Configuration)\</OutputPath>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
-        <HollowKnightRefs>..\API</HollowKnightRefs>
+        <HollowKnightRefs>D:\SteamLibrary\steamapps\common\Hollow Knight\hollow_knight_Data\Managed</HollowKnightRefs>
         <ExportDir>bin\Publish</ExportDir>
     </PropertyGroup>
 
@@ -88,7 +88,7 @@
             <HintPath>$(HollowKnightRefs)/PlayMaker.dll</HintPath>
         </Reference>
 		<Reference Include="Satchel">
-			<HintPath>E:\Hollow Knight 1.5 Modded\hollow_knight_Data\Managed\Mods\Satchel\Satchel.dll</HintPath>
+			<HintPath>$(HollowKnightRefs)/Mods/Satchel/Satchel.dll</HintPath>
 		</Reference>
         <Reference Include="System.ComponentModel.Composition">
             <HintPath>$(HollowKnightRefs)/System.ComponentModel.Composition.dll</HintPath>
